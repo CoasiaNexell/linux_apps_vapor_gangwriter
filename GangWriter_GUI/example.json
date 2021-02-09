@@ -1,0 +1,21 @@
+{
+    "title" : "Nexell Gang Writer Configuration" ,
+    "Configurations" : {
+        "ConfigFile" : "/home/root/test.json",
+        "Modules" : "8",
+        "InputImage" : "/home/root/vapor.bin",
+        "OutDirectory" : "/home/root/",
+        "BackupDirectory" : "/home/root/"
+    },
+    "ConfigNetwork" : {
+        "IPAddress" : "192.168.1.163",
+        "NetworkMask" : "255.255.255.0",
+        "Gateway" : "192.168.1.254",
+        "DNS" : "8.8.8.8"
+    },
+    "ConfigServer" : {
+        "IPAddress" : "192.168.1.160",
+        "TargetDirectory" : "/home/ray",
+        "LocalMountPosition" : "/home/root/mnt"
+    }
+}

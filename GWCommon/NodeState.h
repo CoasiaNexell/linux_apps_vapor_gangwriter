@@ -1,0 +1,24 @@
+#ifndef NODESTATE_H
+#define NODESTATE_H
+
+#define	MAX_NUM_USB_BUS		(4)
+#define	MAX_SUPPORTED_PORTS	(32)
+
+enum eMODULE_STATUS{
+	STATE_NONE,
+	STATE_READY,
+	STATE_DOWNLOADING,
+	STATE_OK,
+	STATE_ERROR,
+	STATE_UNKNOWN,
+};
+typedef enum eMODULE_STATUS MODULE_STATE;
+
+#define		VENDOR_NEXELL		(0x2375)
+#define		VENDOR_GENESYS		(0x05e3)
+#define		PRODUCT_4330		(0x4330)
+#define		PRODUCT_GENESYS		(0x0610)
+
+extern const char *GetModuleString( MODULE_STATE state );
+
+#endif // NODESTATE_H
