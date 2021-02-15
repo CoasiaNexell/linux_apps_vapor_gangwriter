@@ -1,0 +1,15 @@
+[Unit]
+Description=Nexell USB Deamon for GangWriter
+#After=display.target
+
+[Service]
+Type=forking
+#EnvironmentFile=
+ExecStart=/usr/bin/start_gangwriter.sh
+#KillMode=process
+#Restart=on-failure
+#RestartSec=5
+TimeoutSec=3
+
+[Install]
+WantedBy=multi-user.target
